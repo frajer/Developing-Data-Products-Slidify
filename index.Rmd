@@ -24,19 +24,16 @@ slide:not(.segue) h2{
 ## ShinyApps purpose
 <br>
 
-1. Showing tech specs for specifed car
-
-2. Showing actual MPG value for specifed car
-
-3. Showing predicted MPG value for specifed car
+> 1. Showing tech specs for specifed car<br>
+> 2. Showing actual MPG value for specifed car<br>
+> 3. Showing predicted MPG value for specifed car
 
 
 ## Predicting formula
 <br>
 
-* The model for predicting the MPG value is based on my work for "Regression Models" course project.
-
-* The formula for the model is: 
+> * The model for predicting the MPG value is based on my work for "Regression Models" course project.<br>
+> * The formula for the model is: 
 <div style='text-align: center;'>
     <br>
     <img src='model.png' />
@@ -49,9 +46,9 @@ slide:not(.segue) h2{
 
 
 
-## Calculating predicted value for the car on previous slide
+## Evaluating R expression for predicted value
 
-```{r, results='asis', echo=TRUE}
+```{r}
 techs <- function(car) mtcars[car,]
 car <- "Mazda RX4"
 round(9.618-3.917*techs(car)$wt+1.226*techs(car)$qsec
